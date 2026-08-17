@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { Bell, Moon, Sun } from 'lucide-react';
 import { useAppStore } from '@/store';
 import clsx from 'clsx';
@@ -12,7 +13,7 @@ interface HeaderProps {
 export default function Header({ title = 'نمو', showNotifications = true }: HeaderProps) {
   const { isDarkMode, toggleDarkMode, unreadCount, setShowNotifications } = useAppStore();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
     } else {
