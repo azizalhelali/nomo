@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#000" stroke-width="12"/>
+
+  <!-- Growth chart/triangle design -->
+  <g transform="translate(100, 100)">
+    <!-- Upward arrows representing growth -->
+    <path d="M -20 20 L 0 -20 L 20 20" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Accent elements -->
+    <circle cx="-15" cy="5" r="5" fill="#000"/>
+    <circle cx="0" cy="-15" r="5" fill="#000"/>
+    <circle cx="15" cy="5" r="5" fill="#000"/>
+  </g>
+</svg>

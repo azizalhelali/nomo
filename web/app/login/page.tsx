@@ -66,6 +66,17 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
+          <div className="w-24 h-24 mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="w-full h-full">
+              <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" strokeWidth="12" className="text-black dark:text-white"/>
+              <g transform="translate(100, 100)">
+                <path d="M -20 20 L 0 -20 L 20 20" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" className="text-black dark:text-white"/>
+                <circle cx="-15" cy="5" r="5" fill="currentColor" className="text-black dark:text-white"/>
+                <circle cx="0" cy="-15" r="5" fill="currentColor" className="text-black dark:text-white"/>
+                <circle cx="15" cy="5" r="5" fill="currentColor" className="text-black dark:text-white"/>
+              </g>
+            </svg>
+          </div>
           <h1 className="text-4xl font-bold text-black dark:text-white mb-2">نمو</h1>
           <p className="text-gray-600 dark:text-slate-400">إدارة حساباتك على وسائل التواصل</p>
         </div>
