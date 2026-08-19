@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "nomo-f8afa",
+    "public": "web/.next",
+    "cleanUrls": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
