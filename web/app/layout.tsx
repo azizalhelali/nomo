@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'نمو - إدارة وسائل التواصل',
   description: 'تطبيق شامل لإدارة جميع حسابات وسائل التواصل الاجتماعي من مكان واحد',
   icons: {
-    icon: '/logo.svg',
+    icon: '/logo-nomo.svg',
   },
 };
 

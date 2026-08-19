@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#7a9f7e" stroke-width="2"/>
+
+  <!-- Decorative Elements - Left Side Leaves -->
+  <path d="M 100 150 Q 90 140 85 130" fill="none" stroke="#a8b887" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="95" cy="145" rx="8" ry="15" fill="#a8b887" transform="rotate(-45 95 145)"/>
+  <ellipse cx="85" cy="135" rx="8" ry="15" fill="#b8c597" transform="rotate(-45 85 135)"/>
+  <ellipse cx="75" cy="125" rx="8" ry="15" fill="#a8b887" transform="rotate(-45 75 125)"/>
+
+  <!-- Decorative Elements - Top Left Leaves -->
+  <path d="M 120 100 Q 115 85 110 75" fill="none" stroke="#7a9f7e" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="118" cy="95" rx="7" ry="14" fill="#9ab889" transform="rotate(-30 118 95)"/>
+  <ellipse cx="113" cy="82" rx="7" ry="14" fill="#8aaa7a" transform="rotate(-30 113 82)"/>
+
+  <!-- Decorative Elements - Right Side Leaves -->
+  <path d="M 300 150 Q 310 140 315 130" fill="none" stroke="#a8b887" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="305" cy="145" rx="8" ry="15" fill="#a8b887" transform="rotate(45 305 145)"/>
+  <ellipse cx="315" cy="135" rx="8" ry="15" fill="#b8c597" transform="rotate(45 315 135)"/>
+  <ellipse cx="325" cy="125" rx="8" ry="15" fill="#a8b887" transform="rotate(45 325 125)"/>
+
+  <!-- Decorative Elements - Top Right Leaves -->
+  <path d="M 280 100 Q 285 85 290 75" fill="none" stroke="#7a9f7e" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="282" cy="95" rx="7" ry="14" fill="#9ab889" transform="rotate(30 282 95)"/>
+  <ellipse cx="287" cy="82" rx="7" ry="14" fill="#8aaa7a" transform="rotate(30 287 82)"/>
+
+  <!-- Tech Circuit Lines - Top -->
+  <path d="M 160 120 L 180 120 M 180 115 L 180 125" fill="none" stroke="#8aaa7a" stroke-width="2"/>
+  <circle cx="170" cy="120" r="8" fill="none" stroke="#8aaa7a" stroke-width="1"/>
+
+  <path d="M 220 110 L 240 110 M 240 105 L 240 115" fill="none" stroke="#8aaa7a" stroke-width="2"/>
+  <rect x="230" y="105" width="10" height="10" fill="none" stroke="#8aaa7a" stroke-width="1"/>
+
+  <!-- Tech Circuit Lines - Right -->
+  <path d="M 290 180 L 310 180 M 310 175 L 310 185" fill="none" stroke="#8aaa7a" stroke-width="2"/>
+  <rect x="300" y="175" width="10" height="10" fill="none" stroke="#8aaa7a" stroke-width="1"/>
+
+  <path d="M 295 240 L 315 240 M 315 235 L 315 245" fill="none" stroke="#8aaa7a" stroke-width="2"/>
+  <circle cx="305" cy="240" r="8" fill="none" stroke="#8aaa7a" stroke-width="1"/>
+
+  <!-- Tech Circuit Lines - Left -->
+  <path d="M 90 180 L 110 180 M 110 175 L 110 185" fill="none" stroke="#8aaa7a" stroke-width="2"/>
+  <rect x="100" y="175" width="10" height="10" fill="none" stroke="#8aaa7a" stroke-width="1"/>
+
+  <path d="M 85 240 L 105 240 M 105 235 L 105 245" fill="none" stroke="#8aaa7a" stroke-width="2"/>
+  <circle cx="95" cy="240" r="8" fill="none" stroke="#8aaa7a" stroke-width="1"/>
+
+  <!-- Bottom Decorative Elements -->
+  <ellipse cx="120" cy="300" rx="7" ry="14" fill="#9ab889" transform="rotate(-40 120 300)"/>
+  <ellipse cx="140" cy="310" rx="7" ry="14" fill="#8aaa7a" transform="rotate(-40 140 310)"/>
+  <ellipse cx="160" cy="318" rx="7" ry="14" fill="#a8b887" transform="rotate(-40 160 318)"/>
+
+  <ellipse cx="280" cy="300" rx="7" ry="14" fill="#9ab889" transform="rotate(40 280 300)"/>
+  <ellipse cx="260" cy="310" rx="7" ry="14" fill="#8aaa7a" transform="rotate(40 260 310)"/>
+  <ellipse cx="240" cy="318" rx="7" ry="14" fill="#a8b887" transform="rotate(40 240 318)"/>
+
+  <!-- Center Text -->
+  <text x="200" y="215" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#7a9f7e">NOMO</text>
+</svg>
