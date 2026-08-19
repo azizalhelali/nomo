@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Mail, Lock } from 'lucide-react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '@/lib/firebase';
 import Button from '@/components/common/Button';
 import { useAppStore } from '@/store';
 
@@ -24,7 +26,6 @@ export default function LoginPage() {
     setIsLoading(true);
     setError('');
 
-    // Validation
     if (!formData.username.trim()) {
       setError('اسم المستخدم مطلوب');
       setIsLoading(false);
@@ -38,14 +39,12 @@ export default function LoginPage() {
     }
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const userCredential = await signInWithEmailAndPassword(auth, formData.username, formData.password);
 
-      // Mock user data
       const user = {
-        id: '1',
+        id: userCredential.user.uid,
         username: formData.username,
-        email: `${formData.username}@nomo.app`,
+        email: userCredential.user.email || formData.username,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };
@@ -54,8 +53,14 @@ export default function LoginPage() {
       localStorage.setItem('user', JSON.stringify(user));
 
       router.push('/profiles');
-    } catch (err) {
-      setError('فشل تسجيل الدخول. حاول مرة أخرى.');
+    } catch (err: any) {
+      if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password') {
+        setError('بريد إلكتروني أو كلمة مرور غير صحيحة');
+      } else if (err.code === 'auth/invalid-email') {
+        setError('البريد الإلكتروني غير صحيح');
+      } else {
+        setError(err.message || 'فشل تسجيل الدخول. حاول مرة أخرى.');
+      }
     } finally {
       setIsLoading(false);
     }

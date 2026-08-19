@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronRight, LogOut, Fingerprint, Lock, Bell } from 'lucide-react';
+import { signOut } from 'firebase/auth';
+import { auth } from '@/lib/firebase';
 import Header from '@/components/common/Header';
 import BottomNav from '@/components/common/BottomNav';
 import NotificationPanel from '@/components/common/NotificationPanel';
@@ -24,9 +26,14 @@ export default function SettingsPage() {
     );
   }
 
-  const handleLogout = () => {
-    logout();
-    router.push('/login');
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      logout();
+      router.push('/login');
+    } catch (error) {
+      console.error('Logout error:', error);
+    }
   };
 
   const settingsGroups = [
