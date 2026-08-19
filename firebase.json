@@ -1,8 +1,14 @@
 {
   "hosting": {
     "site": "nomo-f8afa",
-    "public": "web/.next",
+    "public": "web/.next/standalone/.next/static",
     "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
