@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "nomo-f8afa",
-    "public": "web/.next/static",
+    "public": "web/out",
     "cleanUrls": true,
     "rewrites": [
       {
