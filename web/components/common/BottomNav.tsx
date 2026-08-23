@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Clock, Settings } from 'lucide-react';
+import { Home, CheckSquare, Settings } from 'lucide-react';
 import clsx from 'clsx';
 
 const navItems = [
@@ -12,9 +12,9 @@ const navItems = [
     icon: Home,
   },
   {
-    label: 'المحتوى المعلق',
-    href: '/app/pending',
-    icon: Clock,
+    label: 'الموافقة',
+    href: '/app/approval',
+    icon: CheckSquare,
   },
   {
     label: 'الإعدادات',

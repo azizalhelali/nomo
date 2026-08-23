@@ -47,7 +47,7 @@ export default function NotificationPanel() {
                     <div
                       className={clsx(
                         'w-3 h-3 rounded-full mt-1.5 flex-shrink-0',
-                        notification.type === 'success' && 'bg-green-500',
+                        notification.type === 'success' && 'bg-gray-500',
                         notification.type === 'error' && 'bg-red-500',
                         notification.type === 'warning' && 'bg-yellow-500',
                         notification.type === 'info' && 'bg-blue-500'

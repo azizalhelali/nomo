@@ -12,6 +12,11 @@ const config: Config = {
         secondary: '#FFFFFF',
         accent: '#F3F4F6',
       },
+      fontFamily: {
+        'cairo': ['Cairo', 'sans-serif'],
+        'diwani': ['Diwani', 'Cairo', 'sans-serif'],
+        'sans': ['Cairo', 'sans-serif'],
+      },
     },
   },
   darkMode: 'class',
